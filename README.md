@@ -1,2 +1,4 @@
 # tools
-Some exercises and tools in C
+
+## circBuf
+A circular buffer implemented in C.
