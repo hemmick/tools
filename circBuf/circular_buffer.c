@@ -101,7 +101,8 @@ bool get_distance_to_element(bool fromHead,
   } else {
     byteOffset = (circBuf._buffer + circBuf.maxItems-1 * circBuf.itemSz) - (uint8_t*)element;
   }
-  return false;
+  *output = byteOffset;
+  return true;
 }
 
 bool circular_buffer_is_empty(CircBuf_t circBuf)
